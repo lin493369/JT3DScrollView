@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		565BBFA23E3257DDBDBAEC02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C663F21CD3E7666A2ED2C5F /* libPods.a */; };
+		841FE5341CBDE9DC0058BA6F /* NTDUserManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FE5321CBDE9DC0058BA6F /* NTDUserManagerViewController.m */; };
+		841FE5351CBDE9DC0058BA6F /* NTDUserManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841FE5331CBDE9DC0058BA6F /* NTDUserManagerViewController.xib */; };
+		841FE5381CBDEDF30058BA6F /* NTDUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FE5371CBDEDF30058BA6F /* NTDUserView.m */; };
+		841FE53A1CBDEE0A0058BA6F /* NTDUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841FE5391CBDEE0A0058BA6F /* NTDUserView.xib */; };
+		841FE53C1CBDF05B0058BA6F /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841FE53B1CBDF05B0058BA6F /* head.jpg */; };
 		AB307BAC1A7C159C00D87905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB307BAB1A7C159C00D87905 /* main.m */; };
 		AB307BAF1A7C159C00D87905 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB307BAE1A7C159C00D87905 /* AppDelegate.m */; };
-		AB307BB21A7C159C00D87905 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB307BB11A7C159C00D87905 /* ViewController.m */; };
 		AB307BB51A7C159C00D87905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB307BB31A7C159C00D87905 /* Main.storyboard */; };
 		AB307BB71A7C159C00D87905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB307BB61A7C159C00D87905 /* Images.xcassets */; };
 		AB307BBA1A7C159C00D87905 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB307BB81A7C159C00D87905 /* LaunchScreen.xib */; };
@@ -18,14 +22,19 @@
 
 /* Begin PBXFileReference section */
 		7EFC3FDE31772FE37A4FF9BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		841FE5311CBDE9DC0058BA6F /* NTDUserManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDUserManagerViewController.h; sourceTree = "<group>"; };
+		841FE5321CBDE9DC0058BA6F /* NTDUserManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDUserManagerViewController.m; sourceTree = "<group>"; };
+		841FE5331CBDE9DC0058BA6F /* NTDUserManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTDUserManagerViewController.xib; sourceTree = "<group>"; };
+		841FE5361CBDEDF30058BA6F /* NTDUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDUserView.h; sourceTree = "<group>"; };
+		841FE5371CBDEDF30058BA6F /* NTDUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDUserView.m; sourceTree = "<group>"; };
+		841FE5391CBDEE0A0058BA6F /* NTDUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTDUserView.xib; sourceTree = "<group>"; };
+		841FE53B1CBDF05B0058BA6F /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = head.jpg; path = ../../../../../Downloads/head.jpg; sourceTree = "<group>"; };
 		8C663F21CD3E7666A2ED2C5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB307BA61A7C159C00D87905 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB307BAA1A7C159C00D87905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB307BAB1A7C159C00D87905 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB307BAD1A7C159C00D87905 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB307BAE1A7C159C00D87905 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AB307BB01A7C159C00D87905 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AB307BB11A7C159C00D87905 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AB307BB41A7C159C00D87905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB307BB61A7C159C00D87905 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB307BB91A7C159C00D87905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -74,10 +83,15 @@
 		AB307BA81A7C159C00D87905 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				841FE53B1CBDF05B0058BA6F /* head.jpg */,
 				AB307BAD1A7C159C00D87905 /* AppDelegate.h */,
 				AB307BAE1A7C159C00D87905 /* AppDelegate.m */,
-				AB307BB01A7C159C00D87905 /* ViewController.h */,
-				AB307BB11A7C159C00D87905 /* ViewController.m */,
+				841FE5361CBDEDF30058BA6F /* NTDUserView.h */,
+				841FE5371CBDEDF30058BA6F /* NTDUserView.m */,
+				841FE5391CBDEE0A0058BA6F /* NTDUserView.xib */,
+				841FE5311CBDE9DC0058BA6F /* NTDUserManagerViewController.h */,
+				841FE5321CBDE9DC0058BA6F /* NTDUserManagerViewController.m */,
+				841FE5331CBDE9DC0058BA6F /* NTDUserManagerViewController.xib */,
 				AB307BB31A7C159C00D87905 /* Main.storyboard */,
 				AB307BB61A7C159C00D87905 /* Images.xcassets */,
 				AB307BB81A7C159C00D87905 /* LaunchScreen.xib */,
@@ -136,6 +150,7 @@
 				TargetAttributes = {
 					AB307BA51A7C159C00D87905 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = AWR8RPACWL;
 					};
 				};
 			};
@@ -163,7 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB307BB51A7C159C00D87905 /* Main.storyboard in Resources */,
+				841FE53C1CBDF05B0058BA6F /* head.jpg in Resources */,
+				841FE53A1CBDEE0A0058BA6F /* NTDUserView.xib in Resources */,
 				AB307BBA1A7C159C00D87905 /* LaunchScreen.xib in Resources */,
+				841FE5351CBDE9DC0058BA6F /* NTDUserManagerViewController.xib in Resources */,
 				AB307BB71A7C159C00D87905 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB307BB21A7C159C00D87905 /* ViewController.m in Sources */,
+				841FE5381CBDEDF30058BA6F /* NTDUserView.m in Sources */,
+				841FE5341CBDE9DC0058BA6F /* NTDUserManagerViewController.m in Sources */,
 				AB307BAF1A7C159C00D87905 /* AppDelegate.m in Sources */,
 				AB307BAC1A7C159C00D87905 /* main.m in Sources */,
 			);
@@ -319,9 +338,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.eivo.Exam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -333,9 +355,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.eivo.Exam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NTDUserManagerViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NTDUserManagerViewController *VC = [[NTDUserManagerViewController alloc]initWithNibName:nil bundle:nil];
+    self.window.rootViewController = VC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
