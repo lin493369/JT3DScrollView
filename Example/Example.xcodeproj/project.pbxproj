@@ -13,6 +13,8 @@
 		841FE5381CBDEDF30058BA6F /* NTDUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FE5371CBDEDF30058BA6F /* NTDUserView.m */; };
 		841FE53A1CBDEE0A0058BA6F /* NTDUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841FE5391CBDEE0A0058BA6F /* NTDUserView.xib */; };
 		841FE53C1CBDF05B0058BA6F /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841FE53B1CBDF05B0058BA6F /* head.jpg */; };
+		841FE5401CBE3BB70058BA6F /* NTDBrushWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841FE53E1CBE3BB70058BA6F /* NTDBrushWorkViewController.m */; };
+		841FE5411CBE3BB70058BA6F /* NTDBrushWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841FE53F1CBE3BB70058BA6F /* NTDBrushWorkViewController.xib */; };
 		AB307BAC1A7C159C00D87905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB307BAB1A7C159C00D87905 /* main.m */; };
 		AB307BAF1A7C159C00D87905 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB307BAE1A7C159C00D87905 /* AppDelegate.m */; };
 		AB307BB51A7C159C00D87905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB307BB31A7C159C00D87905 /* Main.storyboard */; };
@@ -29,6 +31,9 @@
 		841FE5371CBDEDF30058BA6F /* NTDUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDUserView.m; sourceTree = "<group>"; };
 		841FE5391CBDEE0A0058BA6F /* NTDUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTDUserView.xib; sourceTree = "<group>"; };
 		841FE53B1CBDF05B0058BA6F /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = head.jpg; path = ../../../../../Downloads/head.jpg; sourceTree = "<group>"; };
+		841FE53D1CBE3BB70058BA6F /* NTDBrushWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDBrushWorkViewController.h; sourceTree = "<group>"; };
+		841FE53E1CBE3BB70058BA6F /* NTDBrushWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDBrushWorkViewController.m; sourceTree = "<group>"; };
+		841FE53F1CBE3BB70058BA6F /* NTDBrushWorkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NTDBrushWorkViewController.xib; sourceTree = "<group>"; };
 		8C663F21CD3E7666A2ED2C5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB307BA61A7C159C00D87905 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB307BAA1A7C159C00D87905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +91,9 @@
 				841FE53B1CBDF05B0058BA6F /* head.jpg */,
 				AB307BAD1A7C159C00D87905 /* AppDelegate.h */,
 				AB307BAE1A7C159C00D87905 /* AppDelegate.m */,
+				841FE53D1CBE3BB70058BA6F /* NTDBrushWorkViewController.h */,
+				841FE53E1CBE3BB70058BA6F /* NTDBrushWorkViewController.m */,
+				841FE53F1CBE3BB70058BA6F /* NTDBrushWorkViewController.xib */,
 				841FE5361CBDEDF30058BA6F /* NTDUserView.h */,
 				841FE5371CBDEDF30058BA6F /* NTDUserView.m */,
 				841FE5391CBDEE0A0058BA6F /* NTDUserView.xib */,
@@ -179,6 +187,7 @@
 			files = (
 				AB307BB51A7C159C00D87905 /* Main.storyboard in Resources */,
 				841FE53C1CBDF05B0058BA6F /* head.jpg in Resources */,
+				841FE5411CBE3BB70058BA6F /* NTDBrushWorkViewController.xib in Resources */,
 				841FE53A1CBDEE0A0058BA6F /* NTDUserView.xib in Resources */,
 				AB307BBA1A7C159C00D87905 /* LaunchScreen.xib in Resources */,
 				841FE5351CBDE9DC0058BA6F /* NTDUserManagerViewController.xib in Resources */,
@@ -228,6 +237,7 @@
 			files = (
 				841FE5381CBDEDF30058BA6F /* NTDUserView.m in Sources */,
 				841FE5341CBDE9DC0058BA6F /* NTDUserManagerViewController.m in Sources */,
+				841FE5401CBE3BB70058BA6F /* NTDBrushWorkViewController.m in Sources */,
 				AB307BAF1A7C159C00D87905 /* AppDelegate.m in Sources */,
 				AB307BAC1A7C159C00D87905 /* main.m in Sources */,
 			);
