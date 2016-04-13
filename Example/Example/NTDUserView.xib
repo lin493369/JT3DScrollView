@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NTDUserView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HAC-RR-mgl">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小袋子" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NA-Oc-37D">
+                    <rect key="frame" x="8" y="328" width="384" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分：2321" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zL9-Gp-Thv">
+                    <rect key="frame" x="8" y="357" width="384" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nk-h4-H2l">
+                    <rect key="frame" x="346" y="8" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="41p-Oj-Ktx"/>
+                        <constraint firstAttribute="width" constant="46" id="OQV-GQ-OFd"/>
+                    </constraints>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteUserView:" destination="iN0-l3-epB" eventType="touchUpInside" id="1VK-Ca-89j"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaV-bp-sgZ">
+                    <rect key="frame" x="137" y="243" width="126" height="35"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="126" id="RGs-XW-vd6"/>
+                        <constraint firstAttribute="height" constant="35" id="w54-ED-wgf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                    <state key="normal" title="取消绑定牙刷">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleBindBrush:" destination="iN0-l3-epB" eventType="touchUpInside" id="Dle-wG-EkK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YaV-bp-sgZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0yO-Ry-u0U"/>
+                <constraint firstItem="9NA-Oc-37D" firstAttribute="top" secondItem="HAC-RR-mgl" secondAttribute="bottom" constant="28" id="2ny-1m-FY9"/>
+                <constraint firstItem="9Nk-h4-H2l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2te-Yb-P4D"/>
+                <constraint firstItem="HAC-RR-mgl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6vy-0D-YHB"/>
+                <constraint firstAttribute="trailing" secondItem="9Nk-h4-H2l" secondAttribute="trailing" constant="8" id="80a-L0-2c2"/>
+                <constraint firstAttribute="trailing" secondItem="HAC-RR-mgl" secondAttribute="trailing" id="9aN-Pl-WLl"/>
+                <constraint firstItem="9NA-Oc-37D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="EXl-8u-v1O"/>
+                <constraint firstItem="9NA-Oc-37D" firstAttribute="top" secondItem="YaV-bp-sgZ" secondAttribute="bottom" constant="50" id="KDz-ao-oHB"/>
+                <constraint firstAttribute="trailing" secondItem="9NA-Oc-37D" secondAttribute="trailing" constant="8" id="OFC-dG-J56"/>
+                <constraint firstAttribute="trailing" secondItem="zL9-Gp-Thv" secondAttribute="trailing" constant="8" id="Ucp-ee-kKa"/>
+                <constraint firstItem="HAC-RR-mgl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ush-9N-ZvJ"/>
+                <constraint firstAttribute="bottom" secondItem="zL9-Gp-Thv" secondAttribute="bottom" constant="22" id="Uzh-ry-MM3"/>
+                <constraint firstItem="zL9-Gp-Thv" firstAttribute="top" secondItem="9NA-Oc-37D" secondAttribute="bottom" constant="8" id="Xvr-BF-IDb"/>
+                <constraint firstItem="zL9-Gp-Thv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="oNB-V5-JHR"/>
+                <constraint firstItem="zL9-Gp-Thv" firstAttribute="top" secondItem="9NA-Oc-37D" secondAttribute="bottom" constant="8" id="sqZ-QO-gYE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancleBindBtn" destination="YaV-bp-sgZ" id="KHF-Uz-Qae"/>
+                <outlet property="coreLabel" destination="zL9-Gp-Thv" id="qGf-dF-ygJ"/>
+                <outlet property="deleteBtn" destination="9Nk-h4-H2l" id="4Xc-71-c6C"/>
+                <outlet property="headImageView" destination="HAC-RR-mgl" id="PIq-Mu-chS"/>
+                <outlet property="nameLabel" destination="9NA-Oc-37D" id="J9R-AJ-2Ph"/>
+            </connections>
+            <point key="canvasLocation" x="337" y="414"/>
+        </view>
+    </objects>
+</document>
