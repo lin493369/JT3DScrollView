@@ -8,6 +8,7 @@
 
 #import "NTDBrushWorkViewController.h"
 #define BOTTOMVIEW_HEIGHT CGRectGetHeight(_BottomView.frame)
+#define BOTTOMVIEW_TOP 30
 #define BottomViewBottomLayoutConstraintConstant _bottomViewBottomLayoutConstraint.constant
 @interface NTDBrushWorkViewController ()
 @property (strong, nonatomic) IBOutlet UIPanGestureRecognizer *recognizer;
@@ -22,7 +23,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(void)viewDidAppear:(BOOL)animated{
-    _bottomViewBottomLayoutConstraint.constant = - CGRectGetHeight(_BottomView.frame)+30;
+    _bottomViewBottomLayoutConstraint.constant = - CGRectGetHeight(_BottomView.frame)+BOTTOMVIEW_TOP;
     NSLog(@"%f",BOTTOMVIEW_HEIGHT);
 }
 - (void)didReceiveMemoryWarning {
@@ -31,36 +32,54 @@
 }
 - (IBAction)dragView:(id)sender {
     CGPoint translatedPoint = [_recognizer translationInView:self.view];
-//    NSLog(@"y : %f",translatedPoint.y);
-    CGFloat translatedPointY = translatedPoint.y > 0 ? translatedPoint.y : -translatedPoint.y;
+    NSLog(@"y : %f",translatedPoint.y);
     UIGestureRecognizerState state = [_recognizer state];
-    if (translatedPoint.y < 0) {
-        if (BottomViewBottomLayoutConstraintConstant == 0) {
+    if (fabs(translatedPoint.y)>20) {//设置滑动手势 上拉和下拉
+        if (translatedPoint.y > 0) {
+            [UIView animateWithDuration:0.5 animations:^{
+                self.bottomViewBottomLayoutConstraint.constant = - CGRectGetHeight(_BottomView.frame)+BOTTOMVIEW_TOP;
+                [self.view layoutIfNeeded];
+            }];
             return;
-        }
-        _bottomViewBottomLayoutConstraint.constant  = - (BOTTOMVIEW_HEIGHT - translatedPointY);//向上滑动
-
-    }else
-        _bottomViewBottomLayoutConstraint.constant  =  - translatedPointY;//向下滑动
-    
-    
-    if (state == UIGestureRecognizerStateEnded || state == UIGestureRecognizerStateCancelled) {
-        if ((-BottomViewBottomLayoutConstraintConstant < BOTTOMVIEW_HEIGHT/2 && translatedPoint.y<0)|| BottomViewBottomLayoutConstraintConstant > 0) {
-            _bottomViewBottomLayoutConstraint.constant = 0;
+        }else{
+            [UIView animateWithDuration:.5 animations:^{
+                self.bottomViewBottomLayoutConstraint.constant = 0;
+                [self.view layoutIfNeeded];
+            }];
             [_recognizer.view layoutIfNeeded];
             return;
-        }else
-            _bottomViewBottomLayoutConstraint.constant = - CGRectGetHeight(_BottomView.frame)+30;
+        }
+    }
+    if (BottomViewBottomLayoutConstraintConstant < 0 || translatedPoint.y > 0 ) {
+        _bottomViewBottomLayoutConstraint.constant  = BottomViewBottomLayoutConstraintConstant - translatedPoint.y;
+        [_recognizer.view layoutIfNeeded];
+    }
+    
+    if (state == UIGestureRecognizerStateEnded || state == UIGestureRecognizerStateCancelled) {
+        [self updateBottomView];
     }
   
-    [_recognizer.view layoutIfNeeded];
 
 //    CGFloat x = _recognizer.view.center.x + translatedPoint.x;
 //    CGFloat y = _recognizer.view.center.y + translatedPoint.y;
 //    _recognizer.view.center = CGPointMake(x, y);
-//    [_recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+    [_recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
 }
-
+-(void)updateBottomView{
+    if (-BottomViewBottomLayoutConstraintConstant < BOTTOMVIEW_HEIGHT/2 ) {
+        [UIView animateWithDuration:.5 animations:^{
+            self.bottomViewBottomLayoutConstraint.constant = 0;
+            [self.view layoutIfNeeded];
+        }];
+        [_recognizer.view layoutIfNeeded];
+    }else
+    {
+        [UIView animateWithDuration:.5 animations:^{
+            self.bottomViewBottomLayoutConstraint.constant = - CGRectGetHeight(_BottomView.frame)+BOTTOMVIEW_TOP;
+            [self.view layoutIfNeeded];
+        }];
+    }
+}
 /*
 #pragma mark - Navigation
 
