@@ -8,7 +8,7 @@
 
 #import "NTDBrushWorkViewController.h"
 #define BOTTOMVIEW_HEIGHT CGRectGetHeight(_BottomView.frame)
-#define BOTTOMVIEW_TOP 30
+#define BOTTOMVIEW_TOP 0
 #define BottomViewBottomLayoutConstraintConstant _bottomViewBottomLayoutConstraint.constant
 @interface NTDBrushWorkViewController ()
 @property (strong, nonatomic) IBOutlet UIPanGestureRecognizer *recognizer;
